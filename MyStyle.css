@@ -1,0 +1,29 @@
+
+.Right_col{
+    width:78%;
+    float:left;
+ 
+}
+.Left_col{
+    width:20%;
+    float:left;
+    border:1px solid #C0C0C0;
+    margin: 5px;
+    /*padding: 5px;*/
+    
+}
+.All_div{
+    width:100%;
+    overflow: hidden;
+}
+.div_textares_style{
+    float:right;
+}
+textArea{
+    resize: none;
+}
+.table{display: table; border: 0px solid black; margin: 16px; padding: 0px;width:80%}
+.caption{display: table-caption; border: 0px solid black}
+/*.cell{display: table-cell; border: 1px solid black;}*/
+.cell{display:inline-block;margin:10px; }
+.row{display: table-row; border: 0px solid black;}
