@@ -1,0 +1,31 @@
+CREATE TABLE `driver` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Syrname` varchar(255) NOT NULL,
+  `FirstName` varchar(255) NOT NULL,
+  `SecondName` varchar(255) NOT NULL,
+  `ModelCar` varchar(255) NOT NULL,
+  `NumberCar` varchar(255) NOT NULL,
+  `Certification` varchar(255) NOT NULL,
+  `Class` varchar(255) NOT NULL,
+  `expenditure` float NOT NULL DEFAULT '0',
+  UNIQUE KEY `id_2` (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
+
+
+CREATE TABLE `road_data` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_driver` int(11) NOT NULL,
+  `month` date NOT NULL,
+  `balance_fuel` float DEFAULT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8
+
+
+CREATE TABLE `shop` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `shop_name` varchar(255) NOT NULL,
+  `shop_address` varchar(255) NOT NULL,
+  `type` varchar(10) DEFAULT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=535 DEFAULT CHARSET=utf8
